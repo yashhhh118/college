@@ -222,9 +222,9 @@ End If
                         ' **** Added Actions Cell with Delete Button ****
                         Response.Write "<td class='text-center space-x-2'>"
                         Response.Write "<a href='edit_competition.asp?id=" & rsComp("comp_id") & "' class='action-button edit-button'>Edit</a>" ' Placeholder Edit link
-                        %>
-                            <a href="competition.asp?action=delete&id=<%=rsComp('comp_id') %>" class="action-button delete-button" onclick="return confirm('Are you sure you want to delete this competition?');">Delete</a>
-                        <%
+                        <a href="competition.asp?action=delete&id=<%=rsComp("comp_id")%>" class="action-button delete-button" onclick="return confirm('Are you sure you want to delete this competition?');">
+   Delete
+</a>
                         Response.Write "</td>"
 
                         Response.Write "</tr>"
