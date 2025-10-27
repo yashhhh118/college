@@ -227,7 +227,9 @@ End If
                         ' Action Buttons Placeholder
                         Response.Write "<td class='text-center space-x-2'>"
                         Response.Write "<a href='edit_category.asp?id=" & rs("category_id") & "' class='action-button edit-button'>Edit</a>" ' Placeholder link
-                        Response.Write "<a href='category.asp?action=delete&id=" & rs("category_id") & "' class='action-button delete-button' onclick='return confirm(""Are you sure you want to delete this category?"");'>Delete</a>" ' Placeholder link with confirm
+                        %>
+<a href="category.asp?action=delete&id=<%=rs("category_id") %>" class='action-button delete-button' onclick='return confirm("Are you sure you want to delete this category?");'>Delete</a>
+<%
                         Response.Write "</td>"
                         
                         Response.Write "</tr>"
