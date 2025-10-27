@@ -164,7 +164,7 @@ End If
                          <a href="#" id="role-toggle-back" class="font-semibold text-blue-600 hover:text-blue-700 hover:underline">Login as Participant</a>
                     </div>
                      <div class="mt-8 text-center text-sm text-gray-600">
-                        Don’t have an account? <a href="registration.asp" class="font-semibold text-blue-600 hover:text-blue-700 hover:underline">Register here</a>
+                        Don’t have an account? <a href="registrationpage.asp" class="font-semibold text-blue-600 hover:text-blue-700 hover:underline">Register here</a>
                     </div>
                 </div>
             </div>
