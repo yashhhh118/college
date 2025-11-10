@@ -167,11 +167,21 @@ End If
     <h3 class="text-3xl font-bold text-gray-800 mb-8">Manage Categories</h3>
 
     <!-- Display Message -->
-    <% If msg <> "" Then %>
-        <div class="<%= IIf(InStr(msg, "⚠️") > 0, "msg-error", "msg-success") %> text-center animate-fadeIn">
-            <%= msg %>
-        </div>
-    <% End If %>
+    <%
+		If msg <> "" Then
+			Dim msgClass
+			If InStr(msg, "⚠️") > 0 Then
+				msgClass = "msg-error"
+			Else
+				msgClass = "msg-success"
+			End If
+		%>
+			<div class="<%= msgClass %> text-center animate-fadeIn">
+				<%= msg %>
+			</div>
+		<%
+		End If
+%>
 
     <!-- Add Category Form in a Card -->
     <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8 shadow-sm">
